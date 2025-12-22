@@ -74,7 +74,7 @@ export default function HeroSection() {
     {
       title: "Différenciation concurrentielle",
       description:
-        "Positionnez-vous comme un acteur innovant, attentif aux besoins réels de vos adhérents.",
+        "Positionnez-vous comme un acteur innovant, attentif aux besoins réels de vos clients.",
       icon: Trophy,
       color: "bg-red-50",
       iconColor: "text-red-600",
@@ -82,7 +82,7 @@ export default function HeroSection() {
     {
       title: "Fidélisation renforcée",
       description:
-        "Un service utilisé au quotidien crée un lien durable. Vos adhérents équipés de bipSOS™ restent plus longtemps.",
+        "Un service utilisé au quotidien crée un lien durable. Vos clients équipés de bipSOS™ le restent plus longtemps.",
       icon: Heart,
       color: "bg-red-50",
       iconColor: "text-red-600",
@@ -108,7 +108,7 @@ export default function HeroSection() {
   const items = [
     {
       title: "Mutuelles",
-      desc: "Enrichissez votre offre adhérents avec un service de protection concret.",
+      desc: "Enrichissez votre offre clients avec un service de protection concret.",
       icon: <Heart size={28} strokeWidth={2} />,
       color: "#008069",
     },
@@ -130,7 +130,7 @@ export default function HeroSection() {
     {
       title: "Inscription",
       description:
-        "Remplissez le formulaire en ligne. Vérification SIRET sous 24-48h.",
+        "Remplissez le formulaire en ligne. Validation de votre compte (SIRET) sous 24-48h.",
       icon: UserCheck,
       color: "bg-green-800",
     },
@@ -151,7 +151,7 @@ export default function HeroSection() {
     {
       title: "Suivi",
       description:
-        "Encaissement trimestriel selon volumes. Interlocuteur dédié.",
+        "Encaissement mensuel selon volumes.",
       icon: FileText,
       color: "bg-green-800",
     },
@@ -194,6 +194,20 @@ export default function HeroSection() {
               <span>PROGRAMME DISTRIBUTEUR</span>
             </motion.div>
 
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.15, duration: 0.5, ease: "easeOut" }}
+              className="self-start px-6 py-2 
+              text-lg md:text-xl font-semibold tracking-wide 
+              text-white italic rounded-full"
+              style={{
+                textShadow: "0 0 6px #00b894, 0 0 12px rgba(0,184,148,0.6)",
+              }}
+            >
+              " Mutuelles · Courtiers · Agences de voyages "
+            </motion.div>
+
             <motion.h3
               className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight"
               initial={{ opacity: 0, y: 20 }}
@@ -230,9 +244,14 @@ export default function HeroSection() {
             >
               <button
                 onClick={() => router.push("distributeurs/inscription")}
-                className="px-6 py-3 bg-white hover:bg-[#0a1a33] transition hover:text-white rounded-lg font-semibold text-[#0F9C8E] shadow-md text-center cursor-pointer"
+                className="px-6 py-3 bg-white hover:bg-[#0a1a33] transition 
+             hover:text-white rounded-lg font-semibold 
+             text-[#0F9C8E] shadow-md text-center cursor-pointer"
               >
-                Créez votre compte et découvrez les offres bipSOS Distributeurs
+                <span className="block">Créez votre compte</span>
+                <span className="block">
+                  et découvrez les offres bipSOS Distributeurs
+                </span>
               </button>
               {/* <button
                 onClick={() => setShowContact(true)}
@@ -282,11 +301,9 @@ export default function HeroSection() {
               <div className="border-t border-gray-200 mb-8"></div>
               <div className="space-y-4 mb-6">
                 {[
-                  "Quota de licences dédié",
-                  "Remises sur volume attractives",
-                  "Marque blanche disponible",
+                  "Remises sur nombres attractives",
                   "Interlocuteur dédié",
-                  "Contrat 12 mois flexible",
+                  "Contrat 12 mois",
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start">
                     <div className="w-6 h-6 flex-shrink-0 rounded-full bg-[#0a1a33] text-white flex items-center justify-center mr-3 mt-1">
@@ -362,7 +379,7 @@ export default function HeroSection() {
                 <span className="mt-2 h-2.5 w-2.5 rounded-full bg-green-600 shrink-0" />
                 <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
                   <strong>Solution complète clé en main</strong> : application,
-                  support technique et centre de téléassistance disponible 24/7.
+                  support technique et centre de téléassistance disponible 24/7 (pour active assistance).
                 </p>
               </li>
 
@@ -373,14 +390,6 @@ export default function HeroSection() {
                   <strong>niveau de service</strong>, le{" "}
                   <strong>volume de licences</strong> et le degré de
                   <strong> personnalisation</strong>.
-                </p>
-              </li>
-
-              <li className="flex items-start gap-4">
-                <span className="mt-2 h-2.5 w-2.5 rounded-full bg-green-600 shrink-0" />
-                <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
-                  <strong>Marque blanche disponible</strong> pour une
-                  intégration complète à votre identité.
                 </p>
               </li>
 
@@ -800,7 +809,7 @@ export default function HeroSection() {
                 <div className="flex items-center justify-center bg-green-700 rounded-2xl p-2">
                   <User className="h-10 w-10 text-white" />
                 </div>
-                <span className="text-gray-800 font-semibold">Client</span>
+                <span className="text-gray-800 font-semibold">Vos clients</span>
               </div>
             </div>
           </div>

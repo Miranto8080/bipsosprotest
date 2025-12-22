@@ -8,7 +8,7 @@ export default function ProtectionSection() {
     {
       title: "par commande vocale",
       subtitle1: "Même téléphone verrouillé.",
-      subtitle2: "avec ton mot d'alarme secret dans la grande urgence*.",
+      subtitle2: "avec votre mot d'alarme secret dans la grande urgence*.",
       note: "* Uniquement sur smartphones Android",
       img: "/images/vocale.png",
     },
@@ -16,14 +16,14 @@ export default function ProtectionSection() {
       title: "par double-clic discret",
       subtitle1: "Deux clics, une alerte discrète.",
       subtitle2:
-        "Personne autour ne la voit, mais les contacts reçoivent ton alerte.",
+        "Personne autour ne la voit, mais les contacts reçoivent votre alerte.",
       img: "/images/clic.png",
     },
     {
       title: "par détection de chute",
-      subtitle1: "Si tu tombes, bipSOS le sait.",
+      subtitle1: "Si vous tombez, bipSOS le sait.",
       subtitle2:
-        "Et envoie immédiatement une alerte à ceux qui peuvent t'aider.",
+        "Et envoie immédiatement une alerte à ceux qui peuvent vous aider.",
       img: "/images/chute.png",
     },
   ];
@@ -31,21 +31,21 @@ export default function ProtectionSection() {
   const features = [
     {
       title: "la personnalisation",
-      subtitle: "Ta sécurité, ton style",
+      subtitle: "Votre sécurité, votre style",
       image: "/images/personnalisation.jpeg",
-      description: "Choisis ton fond d'écran et bipsOS™ s'intègre dans ta vie, sans rien imposer."
+      description: "Choisis votre fond d'écran et bipsOS™ s'intègre dans votre vie, sans rien imposer."
     },
     {
       title: "la furtivité",
       subtitle: "Invisible à l'œil nu",
       image: "/images/furtivite.jpeg",
-      description: "Toi seul sait que bipsOS™ te protège."
+      description: "Vous seul sait que bipsOS™ vous protège."
     },
     {
       title: "le suivi GPS 48h",
       subtitle: "Rester visible pour ce qui veillent",
       image: "/images/sos.jpg",
-      description: "Ta position reste visible pendant 48h."
+      description: "Votre position reste visible pendant 48h."
     },
     // {
     //   title: "Historique",

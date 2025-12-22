@@ -122,6 +122,21 @@ export default function EntreprisesPage() {
                         />
                         <span>PROGRAMME AMBASSADEUR</span>
                         </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 12 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.15, duration: 0.5, ease: "easeOut" }}
+                            className="self-start px-6 py-2 
+                            text-lg md:text-xl font-semibold tracking-wide 
+                            text-white italic rounded-full"
+                            style={{
+                                textShadow: "0 0 6px rgb(132, 0, 184), 0 0 12px rgba(126, 0, 184, 0.6)",
+                            }}
+                            >
+                            " Influenceurs · Podcasteurs · Créateurs de contenu "
+                        </motion.div>
+                        
                         <motion.h3
                             className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight"
                             initial={{opacity: 0, y: 20}}
@@ -157,7 +172,10 @@ export default function EntreprisesPage() {
                                 onClick={() => router.push('ambassadeurs/inscription')}
                                 className="px-6 py-3 bg-white hover:bg-[#5B21B6] transition hover:text-white rounded-lg font-semibold text-[#7C3AED] shadow-md text-center cursor-pointer"
                             >
-                                Créez votre compte et découvrez les offres bipSOS Ambassadeurs
+                                <span className="block">Créez votre compte</span>
+                                <span className="block">
+                                et découvrez les offres bipSOS Ambassadeurs
+                                </span>
                             </button>
                             {/* <Link href="/contact">
                                 <div
@@ -262,7 +280,7 @@ export default function EntreprisesPage() {
                     >
                         Un programme pensé pour{" "}
                         <span className="bg-gradient-to-b from-purple-500 to-black bg-clip-text text-transparent">
-              les créateurs
+              les créateurs de contenu
             </span>
                     </motion.h2>
 
@@ -310,14 +328,6 @@ export default function EntreprisesPage() {
                             <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
                                 <strong>Suivi en temps réel</strong> de vos conversions et
                                 <strong> paiements réguliers</strong>.
-                            </p>
-                            </li>
-
-                            <li className="flex items-start gap-4">
-                            <span className="mt-2 h-2.5 w-2.5 rounded-full bg-purple-600 shrink-0" />
-                            <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
-                                Votre audience bénéficie d’une <strong>protection fiable</strong>,
-                                vous êtes <strong>rémunéré pour vos recommandations</strong>.
                             </p>
                             </li>
                         </ul>
@@ -389,8 +399,7 @@ export default function EntreprisesPage() {
                                     Inscrivez-vous
                                 </h4>
                                 <p className="text-gray-700 mb-4">
-                                    Remplissez le formulaire. Vérification de votre identité sous
-                                    24-72h (SIRET ou pièce d’identité).
+                                    Remplissez le formulaire. Validation de votre compte (SIRET) sous 24-48h.
                                 </p>
                             </div>
                         </motion.div>
@@ -698,7 +707,7 @@ export default function EntreprisesPage() {
                     {[
                     { icon: faHeartPulse, title: "Santé" },
                     { icon: faPeopleRoof, title: "Famille" },
-                    { icon: faEarthAmericas, title: "Voyage", subtitle: "Personnalisé" },
+                    { icon: faEarthAmericas, title: "Voyage" },
                     { icon: faPersonRunning, title: "Sport" },
                     ].map((card, idx) => (
                     <motion.div
@@ -713,9 +722,6 @@ export default function EntreprisesPage() {
                         <FontAwesomeIcon icon={card.icon} className="text-2xl" />
                         </div>
                         <h3 className="text-3xl font-bold text-gray-900">{card.title}</h3>
-                        {card.subtitle && (
-                        <p className="text-gray-600 text-sm">{card.subtitle}</p>
-                        )}
                     </motion.div>
                     ))}
                 </div>
@@ -739,7 +745,7 @@ export default function EntreprisesPage() {
                                         className="h-10 w-10 text-white"
                                     />
                                 </div>
-                                <span className="text-gray-800 font-semibold">Client</span>
+                                <span className="text-gray-800 font-semibold">Vos followers</span>
                             </div>
                         </div>
                     </div>
@@ -762,7 +768,7 @@ export default function EntreprisesPage() {
                             variants={fadeUpVariants}
                             className="text-4xl md:text-4xl font-bold text-gray-900"
                         >
-                            Rejoignez le programme Distributeur
+                            Rejoignez le programme Ambassadeur
                         </motion.h3>
 
                         <motion.p

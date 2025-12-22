@@ -72,7 +72,7 @@ export default function EntreprisesPage() {
     {
       title: "Inscription",
       description:
-        "Formulaire en ligne, vérification SIRET ou RNA sous 24-48h.",
+        "Formulaire en ligne, Validation de votre compte (SIRET ou RNA) sous 24-48h.",
       icon: UserCheck,
       color: "#DB2777",
     },
@@ -102,7 +102,7 @@ export default function EntreprisesPage() {
   const items = [
     {
       title: "Associations",
-      desc: "Seniors, patients, aidants, handicap.",
+      desc: "Loisirs, seniors, patients.",
       icon: <Heart size={25} strokeWidth={2} />,
       color: "#DB2777",
     },
@@ -168,6 +168,22 @@ export default function EntreprisesPage() {
               <span>PROGRAMME PRESCRIPTEUR</span>
             </motion.div>
 
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.15, duration: 0.5, ease: "easeOut" }}
+              className="self-start px-6 py-2 
+                text-lg md:text-xl font-semibold tracking-wide 
+                text-white italic rounded-full
+              "
+              style={{
+                textShadow:
+                  "0 0 6pxrgb(184, 0, 169), 0 0 12px rgba(184, 0, 153, 0.6)",
+              }}
+            >
+              " Associations · Fédérations · Collectivités · Syndicats"
+            </motion.div>
+
             <motion.h3
               className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight"
               initial={{ opacity: 0, y: 20 }}
@@ -192,8 +208,10 @@ export default function EntreprisesPage() {
               transition={{ delay: 0.6 }}
             >
               Associations, fédérations, collectivités : proposez bipSOS™ à vos
-              membres et affiliés. Un service à forte valeur ajoutée qui
-              renforce votre mission.
+              membres et affiliés.
+              <span className="block">
+                Un service à forte valeur ajoutée qui renforce votre mission.
+              </span>
             </motion.p>
 
             <motion.div
@@ -206,7 +224,10 @@ export default function EntreprisesPage() {
                 onClick={() => router.push("ambassadeur-pro/inscription")}
                 className="px-6 py-3 bg-white hover:bg-[#DB2777] transition hover:text-white rounded-lg font-semibold text-[#DB2777] shadow-md text-center cursor-pointer"
               >
-                Créez votre compte et découvrez les offres bipSOS Prescripteurs
+                <span className="block">Créez votre compte</span>
+                <span className="block">
+                  et découvrez les offres bipSOS Prescripteurs
+                </span>
               </button>
               {/* <Link href="/contact">
                 <div className="px-6 py-3 bg-white/10 hover:bg-white/20 transition rounded-lg font-semibold text-white border border-white/20 backdrop-blur text-center cursor-pointer">
@@ -242,11 +263,11 @@ export default function EntreprisesPage() {
               <div className="border-t border-gray-200 mb-8"></div>
               <div className="space-y-4 mb-6">
                 {[
-                  "Quota de licences négocié",
+                  // "Quota de licences négocié",
                   "Tarif préférentiel bénéficiaires",
                   "Convention flexible",
                   "Accompagnement dédié",
-                  "Encaissement trimestriel",
+                  // "Encaissement trimestriel",
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start">
                     <div className="w-6 h-6 flex-shrink-0 rounded-full bg-[#DB2777] text-white flex items-center justify-center mr-3 mt-1">
@@ -967,7 +988,7 @@ export default function EntreprisesPage() {
                   <Users className="h-8 w-8 text-white" />
                 </div>
                 <span className="text-gray-800 font-semibold">
-                  Bénéficiaire
+                  Vos bénéficiaire
                 </span>
               </div>
             </div>

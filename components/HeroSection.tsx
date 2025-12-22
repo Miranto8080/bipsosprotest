@@ -108,7 +108,7 @@ export default function HeroSection() {
         >
           <div className="w-full h-full max-w-[1200px] max-h-[1500px] relative">
             <Image
-              src="/images/bbg.png"
+              src="/images/f2.png"
               alt="Sécurité professionnelle bipSOS"
               fill
               priority
@@ -169,7 +169,7 @@ export default function HeroSection() {
           transition={{ delay: 1.4, duration: 0.6 }}
         >
           <Image
-            src="/images/foot1.png"
+            src="/images/foot1c.png"
             alt="Illustration entre sections"
             fill
             priority
@@ -200,60 +200,103 @@ export default function HeroSection() {
           <div className="flex flex-col items-center text-center space-y-6">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight before-animate">
               Solutions Pro pour{" "}
-              <span className="text-red-600">entreprises</span> et{" "}
+              <span className="block text-red-600">entreprises</span> et{" "}
               <span className="text-red-600">partenaires</span> de diffusion
             </h1>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 w-full">
-              <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/10 hover:bg-white/20 transition text-center hover:animate-pulse-glow before-animate">
-                <div className="flex justify-center mb-6">
-                  <div className="w-20 h-20 flex items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 via-violet-600 to-rose-700 text-white shadow-xl animate-float">
-                    <FontAwesomeIcon icon={faHandshake} size="2x" />
+            <div
+                className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/10 
+                hover:bg-white/20 transition text-center 
+                min-h-[520px] flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex justify-center mb-6">
+                    <div
+                      className="w-20 h-20 flex items-center justify-center rounded-2xl 
+                      bg-gradient-to-br from-red-800 to-red-950 
+                      text-white shadow-xl animate-float"
+                    >
+                      <FontAwesomeIcon icon={faBuilding} size="2x" />
+                    </div>
                   </div>
+
+                  <h2
+                    className="text-4xl md:text-5xl font-extrabold uppercase tracking-widest 
+                   bg-gradient-to-r from-red-600 via-red-500 to-red-600 
+                   bg-clip-text text-transparent"
+                  >
+                    ENTREPRISES
+                  </h2>
+
+                  <h3 className="text-4xl font-semibold mt-2 text-white">
+                    Protégez vos salariés
+                  </h3>
+
+                  <h4 className="text-3xl font-bold mt-12 text-white">
+                    Solutions de sécurité
+                  </h4>
+
+                  <p className="text-gray-200 text-xl mt-2">
+                    pour équipes tertiaires, commerciaux sédentaires et
+                    itinérants, télétravail, situation de handicap
+                  </p>
                 </div>
-                <h2 className="text-4xl md:text-5xl font-extrabold uppercase tracking-widest bg-gradient-to-r from-emerald-400 via-violet-500 to-rose-600 bg-clip-text text-transparent before-animate">
-                  Partenaires
-                </h2>
-                <h3 className="text-4xl font-semibold mt-2 text-white before-animate">
-                  Développez votre activité
-                </h3>
-                <h4 className="text-2xl font-bold mt-12 text-white before-animate">
-                  Partenariat de diffusion
-                </h4>
-                <p className="text-gray-200 text-m mt-2 before-animate">
-                  pour distributeurs, influenceurs et prescripteurs
-                </p>
+
                 <Link
                   href="/partenaires"
-                  className="inline-block mt-8 text-purple-400 font-bold hover:text-rose-500 transition before-animate"
+                  className="mt-10 inline-block px-8 py-4 rounded-full 
+                  text-lg font-bold text-white 
+                  bg-gradient-to-r from-red-700 to-red-900 
+                  hover:scale-105 hover:shadow-xl transition"
                 >
                   Découvrir →
                 </Link>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/10 hover:bg-white/20 transition text-center hover:animate-pulse-glow before-animate">
-                <div className="flex justify-center mb-6">
-                  <div className="w-20 h-20 flex items-center justify-center rounded-2xl bg-gradient-to-br from-red-800 to-red-950 text-white shadow-xl animate-float">
-                    <FontAwesomeIcon icon={faBuilding} size="2x" />
+              <div
+                className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/10 
+                hover:bg-white/20 transition text-center 
+                min-h-[520px] flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex justify-center mb-6">
+                    <div
+                      className="w-20 h-20 flex items-center justify-center rounded-2xl 
+                      bg-gradient-to-br from-emerald-500 via-violet-600 to-rose-700 
+                      text-white shadow-xl animate-float"
+                    >
+                      <FontAwesomeIcon icon={faHandshake} size="2x" />
+                    </div>
                   </div>
+
+                  <h2
+                    className="text-4xl md:text-5xl font-extrabold uppercase tracking-widest 
+                   bg-gradient-to-r from-emerald-400 via-violet-500 to-rose-600 
+                   bg-clip-text text-transparent"
+                  >
+                    Partenaires
+                  </h2>
+
+                  <h3 className="text-4xl font-semibold mt-2 text-white">
+                    Développez votre activité
+                  </h3>
+
+                  <h4 className="text-3xl font-bold mt-12 text-white">
+                    Partenariat de diffusion
+                  </h4>
+
+                  <p className="text-gray-200 text-xl mt-2">
+                    pour distributeurs, influenceurs et prescripteurs
+                  </p>
                 </div>
-                <h2 className="text-4xl md:text-5xl font-extrabold uppercase tracking-widest bg-gradient-to-r from-red-400 via-red-350 to-red-400 bg-clip-text text-transparent before-animate">
-                  ENTREPRISES
-                </h2>
-                <h3 className="text-4xl font-semibold mt-2 text-white before-animate">
-                  Protégez vos salariés
-                </h3>
-                <h4 className="text-2xl font-bold mt-12 text-white before-animate">
-                  Solutions de sécurité
-                </h4>
-                <p className="text-gray-200 text-m mt-2 before-animate">
-                  pour équipes tertiaires, commerciaux sédentaires et
-                  itinérants, télétravail, situation de handicap
-                </p>
 
                 <Link
                   href="/partenaires"
-                  className="inline-block mt-8 text-red-400 font-bold hover:text-red-300 transition before-animate"
+                  className="mt-10 inline-block px-8 py-4 rounded-full 
+                  text-lg font-bold text-white 
+                  bg-gradient-to-r from-violet-600 to-rose-600 
+                  hover:scale-105 hover:shadow-xl transition"
                 >
                   Découvrir →
                 </Link>
@@ -451,16 +494,17 @@ export default function HeroSection() {
 
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
             <button
-              onClick={() => (window.location.href = "/partenaires")}
-              className="px-6 py-4 bg-red-500 hover:bg-gray-900 text-white font-semibold rounded-lg shadow-md transition-all duration-200 flex flex-col items-center"
-            >
-              <h3 className="text-xl font-semibold">Espace Partenaires</h3>
-            </button>
-            <button
               onClick={() => (window.location.href = "/entreprises")}
-              className="px-6 py-4 border border-white hover:bg-gray-900 text-white font-semibold rounded-lg shadow-md transition-all duration-200 flex flex-col items-center"
+              className="px-6 py-4 bg-red-600 hover:bg-gray-900 text-white font-semibold rounded-lg shadow-md transition-all duration-200 flex flex-col items-center"
             >
               <h3 className="text-xl font-semibold">Espace Entreprises</h3>
+            </button>
+
+            <button
+              onClick={() => (window.location.href = "/partenaires")}
+              className="px-6 py-4 border border-white hover:bg-gray-900 text-white font-semibold rounded-lg shadow-md transition-all duration-200 flex flex-col items-center"
+            >
+              <h3 className="text-xl font-semibold">Espace Partenaires</h3>
             </button>
           </div>
         </div>
