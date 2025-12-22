@@ -14,10 +14,7 @@ const BPOfferTable = () => {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-10 "
         >
-          L’offre{" "}
-          <span className="text-red-600">
-          bipSOS™
-          </span>
+          L’offre <span className="text-red-600">bipSOS™</span>
           Entreprises
         </motion.h2>
       </div>
@@ -92,7 +89,7 @@ const BPOfferTable = () => {
                     <Check className="w-6 h-6 text-red-600" />
                   </div>
                   <span className="font-medium text-gray-900">
-                    Position GPS jusqu’à 48 heures
+                    SMS SOS avec position GPS sous 48h
                   </span>
                 </div>
 
@@ -143,11 +140,15 @@ const BPOfferTable = () => {
                 <div className="space-y-2 ml-4">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-gray-600 rounded-full"></div>
-                    <span className="text-gray-700">Personnalisation</span>
+                    <span className="text-gray-700">
+                      Personnalisation du fond d'écran
+                    </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-gray-600 rounded-full"></div>
-                    <span className="text-gray-700">Furtivité</span>
+                    <span className="text-gray-700">
+                      Furtivité des touches d'urgence
+                    </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-gray-600 rounded-full"></div>
@@ -158,7 +159,7 @@ const BPOfferTable = () => {
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-gray-600 rounded-full"></div>
                     <span className="text-gray-700">
-                      SMS SOS avec position GPS
+                      SMS SOS avec position GPS sous 48h
                     </span>
                   </div>
                 </div>
@@ -193,7 +194,7 @@ const BPOfferTable = () => {
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-gray-600 rounded-full flex-shrink-0"></div>
-                <span className="text-gray-700">suivi des alertes</span>
+                <span className="text-gray-700">Suivi des alertes</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-gray-600 rounded-full flex-shrink-0"></div>
@@ -202,6 +203,10 @@ const BPOfferTable = () => {
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-gray-600 rounded-full flex-shrink-0"></div>
                 <span className="text-gray-700">Guides d’utilisation</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-gray-600 rounded-full flex-shrink-0"></div>
+                <span className="text-gray-700">SMS SOS avec position GPS sous 48h</span>
               </div>
             </div>
           </div>

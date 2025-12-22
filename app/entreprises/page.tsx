@@ -99,7 +99,7 @@ export default function EntreprisesPage() {
     {
       title: "Commandez en ligne ou demandez un devis",
       subtitle:
-        "Jusqu'à 200 licences : commande immédiate. Au-delà : nos équipes vous accompagnent.",
+        "Jusqu'à 50 licences : commande immédiate. Au-delà : nos équipes vous accompagnent.",
       color: "bg-blue-800",
     },
     {
@@ -162,8 +162,8 @@ export default function EntreprisesPage() {
               transition={{ delay: 0.6 }}
             >
               Avec la solution de sécurité personnelle pour vos équipes
-              tertiaires : bureaux, commerciaux terrain, télétravail. Sans
-              équipement supplémentaire, depuis leur smartphone.
+              tertiaires : bureaux, commerciaux terrain, télétravail. 
+              <span className="block">Sans équipement supplémentaire, depuis leur smartphone.</span>
             </motion.p>
 
             <motion.div
@@ -176,7 +176,10 @@ export default function EntreprisesPage() {
                 onClick={() => navigation.push("entreprises/inscription")}
                 className="px-6 py-3 bg-red-600 hover:bg-red-700 transition rounded-lg font-semibold text-white shadow-md text-center cursor-pointer"
               >
-                Créez votre compte et découvrez les offres bipSOS Entreprise
+               <span className="block">Créez votre compte</span>
+                <span className="block">
+                  et découvrez les offres bipSOS Entreprises
+                </span>
               </button>
               {/* <button
                                 onClick={() => navigation.push('entreprises/inscription')}
@@ -641,16 +644,16 @@ export default function EntreprisesPage() {
                 <button
                   onClick={() => navigation.push("entreprises/inscription")}
                 >
-                  Créer votre compte pour découvrir nos offres
+                  Créer votre compte pour découvrir nos offres Entreprises
                 </button>
               </div>
               {/* <div
-                                className="flex items-center gap-2 bg-gray-900 hover:bg-black text-white font-semibold px-6 py-4 rounded-lg text-lg cursor-pointer transition-all">
-                                <button onClick={() => setShowDevis(true)}>
-                                    Demander un devis
-                                </button>
-                                <span className="text-xs opacity-90">plus de 200 licences</span>
-                            </div> */}
+                className="flex items-center gap-2 bg-gray-900 hover:bg-black text-white font-semibold px-6 py-4 rounded-lg text-lg cursor-pointer transition-all">
+                <button onClick={() => setShowDevis(true)}>
+                    Demander un devis
+                </button>
+                <span className="text-xs opacity-90">plus de 200 licences</span>
+              </div> */}
             </motion.div>
             {showDevis && <DevisSection onClose={() => setShowDevis(false)} />}
           </div>
@@ -683,7 +686,7 @@ export default function EntreprisesPage() {
               <span className="mr-2 flex items-center justify-center bg-gray-200 rounded-sm p-2">
                 <CheckBadgeIcon className="h-5 w-5 text-gray-700" />
               </span>
-              <span>Brevet européen déposé</span>
+              <span>Brevet</span>
             </div>
 
             <div className="hidden md:block text-gray-400">|</div>
@@ -692,7 +695,7 @@ export default function EntreprisesPage() {
               <span className="mr-2 flex items-center justify-center bg-gray-200 rounded-sm p-2">
                 <GlobeAltIcon className="h-5 w-5 text-gray-700" />
               </span>
-              <span>Sceau d’excellence VE</span>
+              <span>Sceau d’excellence UE</span>
             </div>
             <div className="hidden md:block text-gray-400">|</div>
 
