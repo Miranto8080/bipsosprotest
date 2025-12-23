@@ -148,6 +148,32 @@ export default function ContactPage() {
                 </div>
               </div>
 
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-gray-700 text-sm font-medium mb-2">
+                    Raison social *
+                  </label>
+                  <input
+                    name="raisonsocial"
+                    type="raisonsocial"
+                    required
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300"
+                    placeholder="Votre raison social"
+                  />
+                </div>
+                <div>
+                  <label className="block text-gray-700 text-sm font-medium mb-2">
+                    SIRET *
+                  </label>
+                  <input
+                    name="siret"
+                    type="siret"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300"
+                    placeholder="12345678901234"
+                  />
+                </div>
+              </div>
+
               <div>
                 <label className="block text-gray-700 text-sm font-medium mb-2">
                   Question *
@@ -247,6 +273,33 @@ export default function ContactPage() {
                     required
                     className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300"
                     placeholder="Votre prénom"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-gray-700 text-sm font-medium mb-2">
+                    Raison social *
+                  </label>
+                  <input
+                    name="raisonsociale"
+                    type="raisonsociale"
+                    required
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300"
+                    placeholder="Votre raison sociale"
+                  />
+                </div>
+                <div>
+                  <label className="block text-gray-700 text-sm font-medium mb-2">
+                    SIRET *
+                  </label>
+                  <input
+                    name="siret"
+                    type="siret"
+                    required
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300"
+                    placeholder="12345678901234"
                   />
                 </div>
               </div>

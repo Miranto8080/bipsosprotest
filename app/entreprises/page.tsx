@@ -178,7 +178,7 @@ export default function EntreprisesPage() {
               >
                <span className="block">Créez votre compte</span>
                 <span className="block">
-                  et découvrez les offres bipSOS Entreprises
+                  et découvrez les offres bipSOS Entreprise
                 </span>
               </button>
               {/* <button
@@ -644,7 +644,7 @@ export default function EntreprisesPage() {
                 <button
                   onClick={() => navigation.push("entreprises/inscription")}
                 >
-                  Créer votre compte pour découvrir nos offres Entreprises
+                  Créer votre compte pour découvrir nos offres Entreprise
                 </button>
               </div>
               {/* <div

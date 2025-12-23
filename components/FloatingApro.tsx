@@ -71,7 +71,7 @@ export default function FloatingButtons({
             min-w-0 md:min-w-[200px]
           "
         >
-          Créez votre compte et découvrez les offres bipSOS Prescripteurs
+          Créez votre compte et découvrez les offres bipSOS Prescripteur
         </Link>
         {/* <Link
             href="/contact"

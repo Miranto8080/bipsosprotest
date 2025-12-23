@@ -71,7 +71,7 @@ export default function FloatingButtons({
             min-w-0 md:min-w-[200px]
           "
         >
-          Créez votre compte et découvrez les offres bipSOS Ambassadeurs
+          Créez votre compte et découvrez les offres bipSOS Ambassadeur
         </Link>
         {/* <Link
             href="/contact"

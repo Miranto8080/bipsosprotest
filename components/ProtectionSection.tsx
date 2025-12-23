@@ -33,13 +33,13 @@ export default function ProtectionSection() {
       title: "la personnalisation",
       subtitle: "Votre sécurité, votre style",
       image: "/images/personnalisation.jpeg",
-      description: "Choisis votre fond d'écran et bipsOS™ s'intègre dans votre vie, sans rien imposer."
+      description: "Choisisssez votre fond d'écran et bipSOS™ s'intègre dans votre vie, sans rien imposer."
     },
     {
       title: "la furtivité",
       subtitle: "Invisible à l'œil nu",
       image: "/images/furtivite.jpeg",
-      description: "Vous seul sait que bipsOS™ vous protège."
+      description: "Vous seul savez que bipSOS™ vous protège."
     },
     {
       title: "le suivi GPS 48h",

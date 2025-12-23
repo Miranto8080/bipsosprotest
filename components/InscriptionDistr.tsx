@@ -1508,7 +1508,7 @@ export default function InscriptionDistr() {
           </div>
 
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mt-4">
-            Devenez partenaire bipSOS
+            Rejoignez le programme Distributeur
           </h1>
           <p className="text-sm text-gray-600 mt-2 max-w-xl mx-auto">
             Rejoignez notre réseau et proposez la protection bipSOS à vos clients

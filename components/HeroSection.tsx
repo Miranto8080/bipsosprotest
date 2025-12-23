@@ -151,7 +151,7 @@ export default function HeroSection() {
               </h1>
 
               <p className="text-xl md:text-4xl font-extrabold">
-                Réinvente la sécurité professionnelle & transforme tout
+                réinvente la sécurité professionnelle & transforme tout
                 smartphone
                 <br className="hidden md:block" />
                 <span className="text-red-500">en lanceur d’alerte</span>
@@ -169,7 +169,7 @@ export default function HeroSection() {
           transition={{ delay: 1.4, duration: 0.6 }}
         >
           <Image
-            src="/images/foot1c.png"
+            src="/images/foot1copy.png"
             alt="Illustration entre sections"
             fill
             priority
@@ -195,8 +195,8 @@ export default function HeroSection() {
           />
         </motion.div>
       </div>
-      <section className="relative min-h-screen pb-32 flex flex-col justify-center overflow-hidden text-white bg-gradient-to-br from-blue-900 via-blue-950 to-red-800">
-        <div className="relative z-10 mx-auto px-6 max-w-6xl pt-32 pb-20 my-10">
+      <section className="relative min-h-screen flex flex-col justify-center overflow-hidden text-white bg-gradient-to-br from-blue-900 via-blue-950 to-red-800">
+        <div className="relative z-10 mx-auto px-6 max-w-6xl my-20">
           <div className="flex flex-col items-center text-center space-y-6">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight before-animate">
               Solutions Pro pour{" "}

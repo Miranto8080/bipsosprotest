@@ -102,12 +102,13 @@ const BPOfferTable = () => {
                   </span>
                 </div>
 
-                <div className="flex items-start gap-3 mt-6 pt-6 border-t border-gray-200">
-                  <div className="w-6 h-6 flex-shrink-0">
+                <div className="my-6 border-t border-gray-300"></div>
+                <div className="flex items-start gap-3 mt-6 p-4 bg-red-50 rounded-md">
+                  {/* <div className="w-6 h-6 flex-shrink-0">
                     <Check className="w-6 h-6 text-red-600" />
-                  </div>
-                  <span className="text-gray-900">
-                    Alertes vers le référent sécurité et collaborateurs désignés
+                  </div> */}
+                  <span className="font-bold text-gray-900 text-xl">
+                    Alertes vers le référent sécurité 
                   </span>
                 </div>
               </div>
@@ -141,13 +142,13 @@ const BPOfferTable = () => {
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-gray-600 rounded-full"></div>
                     <span className="text-gray-700">
-                      Personnalisation du fond d'écran
+                      Personnalisation du fond d’écran
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-gray-600 rounded-full"></div>
                     <span className="text-gray-700">
-                      Furtivité des touches d'urgence
+                      Furtivité des touches d’urgence
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -166,11 +167,11 @@ const BPOfferTable = () => {
               </div>
 
               <div className="my-6 border-t border-gray-300"></div>
-              <div className="flex items-start gap-3">
-                <div className="w-6 h-6 flex-shrink-0">
+              <div className="flex items-start gap-3 p-4 bg-blue-50 rounded-md">
+                {/* <div className="w-6 h-6 flex-shrink-0">
                   <Check className="w-6 h-6 text-blue-600" />
-                </div>
-                <span className="text-gray-900">
+                </div> */}
+                <span className="font-bold text-gray-900 text-xl">
                   Alertes vers le Centre téléassistance 24/7/365
                 </span>
               </div>
@@ -206,7 +207,9 @@ const BPOfferTable = () => {
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-gray-600 rounded-full flex-shrink-0"></div>
-                <span className="text-gray-700">SMS SOS avec position GPS sous 48h</span>
+                <span className="text-gray-700">
+                  SMS SOS avec position GPS sous 48h
+                </span>
               </div>
             </div>
           </div>
