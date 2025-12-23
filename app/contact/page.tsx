@@ -151,7 +151,7 @@ export default function ContactPage() {
               <div className="space-y-4">
                 <div>
                   <label className="block text-gray-700 text-sm font-medium mb-2">
-                    Raison social *
+                    Raison social 
                   </label>
                   <input
                     name="raisonsocial"
@@ -163,7 +163,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <label className="block text-gray-700 text-sm font-medium mb-2">
-                    SIRET *
+                    SIRET 
                   </label>
                   <input
                     name="siret"
@@ -280,7 +280,7 @@ export default function ContactPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-gray-700 text-sm font-medium mb-2">
-                    Raison social *
+                    Raison social 
                   </label>
                   <input
                     name="raisonsociale"
@@ -292,7 +292,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <label className="block text-gray-700 text-sm font-medium mb-2">
-                    SIRET *
+                    SIRET 
                   </label>
                   <input
                     name="siret"
