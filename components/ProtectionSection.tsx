@@ -33,19 +33,20 @@ export default function ProtectionSection() {
       title: "la personnalisation",
       subtitle: "Votre sécurité, votre style",
       image: "/images/personnalisation.jpeg",
-      description: "Choisisssez votre fond d'écran et bipSOS™ s'intègre dans votre vie, sans rien imposer."
+      description:
+        "Choisissez votre fond d'écran\net bipSOS™ s'intègre dans votre vie,\nsans rien imposer.",
     },
     {
       title: "la furtivité",
       subtitle: "Invisible à l'œil nu",
       image: "/images/furtivite.jpeg",
-      description: "Vous seul savez que bipSOS™ vous protège."
+      description: "Vous seul savez\nque bipSOS™ vous protège.",
     },
     {
       title: "le suivi GPS 48h",
       subtitle: "Rester visible pour ce qui veillent",
       image: "/images/sos.jpg",
-      description: "Votre position reste visible pendant 48h."
+      description: "Votre position reste visible\npendant 48h.",
     },
     // {
     //   title: "Historique",
@@ -72,13 +73,11 @@ export default function ProtectionSection() {
         transition={{ duration: 1.2 }}
       >
         <span className="text-red-600">
-        L’innovation Sécurité professionnelle
+          L’innovation Sécurité professionnelle
         </span>{" "}
-        <br/>
-        pour lancer une alerte {" "}
-        <span className="text-red-600">
-        instantanément
-        </span>{" "}
+        <br />
+        pour lancer une alerte{" "}
+        <span className="text-red-600">instantanément</span>{" "}
       </motion.h1>
 
       <motion.h1
@@ -106,7 +105,7 @@ export default function ProtectionSection() {
               <Image
                 src={step.img}
                 alt={step.title}
-                width={320} 
+                width={320}
                 height={320}
                 className="transition-all duration-500 group-hover:scale-105 group-hover:shadow-xl shadow-lg       
                   rounded-xl border-2  border-gray-100 hover:border-red-200 hover:shadow-2xl"
@@ -137,11 +136,7 @@ export default function ProtectionSection() {
         viewport={{ once: true }}
         transition={{ duration: 1.2 }}
       >
-        et{" "}
-        <span className="text-red-600">
-        en toute sécurité 
-        </span>{" "}
-        grâce à
+        et <span className="text-red-600">en toute sécurité</span> grâce à
       </motion.h1>
 
       <div className="w-full max-w-6xl mx-auto mt-8">
@@ -155,8 +150,10 @@ export default function ProtectionSection() {
               viewport={{ once: true }}
               className="flex flex-col items-center text-center"
             >
-              <div className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden shadow-xl
-                hover:shadow-2xl transition-all duration-400 mb-6">
+              <div
+                className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden shadow-xl
+                hover:shadow-2xl transition-all duration-400 mb-6"
+              >
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -174,31 +171,36 @@ export default function ProtectionSection() {
                 {item.title}
               </h3>
 
-              <p className="
+              <p
+                className="
                 text-lg
                 md:text-xl
                 text-gray-700
                 font-medium
                 mb-4
                 leading-relaxed
-              ">
+              "
+              >
                 {item.subtitle}
               </p>
-              
+
               <div className="text-gray-600">
-                <p className="
-                  text-base
-                  md:text-lg
-                  leading-relaxed
-                  italic
-                  max-w-sm
-                  mx-auto
-                ">
-                  {item.description || 
-                    (index === 0 && "Choisis ton fond d'écran et bipsOS™ s'intègre dans ta vie, sans rien imposer.") ||
-                    (index === 1 && "Ton seul soit que bipsOS™ te protège.") ||
-                    (index === 2 && "Ta position reste visible pendant 48h.")
-                  }
+                <p
+                  className="
+                    text-base
+                    md:text-lg
+                    leading-relaxed
+                    italic
+                    max-w-sm
+                    mx-auto
+                    whitespace-pre-line
+                  "
+                >
+                  {item.description ||
+                    (index === 0 &&
+                      "Choisis ton fond d'écran\net bipsOS™ s'intègre dans ta vie,\nsans rien imposer.") ||
+                    (index === 1 && "Ton seul sait\nque bipsOS™ te protège.") ||
+                    (index === 2 && "Ta position reste visible\npendant 48h.")}
                 </p>
               </div>
             </motion.div>

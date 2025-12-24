@@ -334,11 +334,12 @@ export default function EntreprisesPage() {
             <div className="relative w-full max-w-lg h-[800px] ml-0 lg:ml-8">
               <div className="relative w-full h-full flex items-center justify-center p-8">
                 <Image
-                  src="/images/Frame.png"
+                  src="/images/F2.jpeg"
                   alt="Ambassadeur bipSOS"
                   width={500}
                   height={500}
                   priority
+                  className="object-cover rounded-3xl shadow-2xl"
                 />
 
                 <div className="absolute top-30 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-float">
@@ -771,7 +772,7 @@ export default function EntreprisesPage() {
               <div className="relative overflow-hidden">
                 <div className="relative h-[600px] lg:h-[700px] p-8 lg:p-16">
                   <Image
-                    src="/images/Frame 45.png"
+                    src="/images/Frame1.png"
                     alt="Tableau de bord ambassadeur bipSOS"
                     fill
                     className="object-cover object-center"
