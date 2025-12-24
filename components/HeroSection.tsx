@@ -169,7 +169,7 @@ export default function HeroSection() {
           transition={{ delay: 1.4, duration: 0.6 }}
         >
           <Image
-            src="/images/foot1copy.png"
+            src="/images/r2.png"
             alt="Illustration entre sections"
             fill
             priority

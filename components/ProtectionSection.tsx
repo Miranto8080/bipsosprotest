@@ -63,9 +63,9 @@ export default function ProtectionSection() {
   // ];
 
   return (
-    <section className="flex flex-col items-center text-center px-6 py-18 ">
+    <section className="flex flex-col items-center text-center px-6 py-18 bg-white">
       <motion.h1
-        className="font-bold text-3xl md:text-5xl text-center leading-tight px-auto"
+        className="font-bold text-3xl md:text-5xl text-center leading-tight px-auto text-gray-900"
         initial={{ opacity: 0, y: -20, scale: 0.95 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         viewport={{ once: true }}
@@ -82,7 +82,7 @@ export default function ProtectionSection() {
       </motion.h1>
 
       <motion.h1
-        className="font-bold text-2xl md:text-4xl text-center leading-tight px-auto mt-15"
+        className="font-bold text-2xl md:text-4xl text-center leading-tight px-auto mt-15 text-gray-900"
         initial={{ opacity: 0, y: -20, scale: 0.95 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         viewport={{ once: true }}
@@ -112,7 +112,7 @@ export default function ProtectionSection() {
                   rounded-xl border-2  border-gray-100 hover:border-red-200 hover:shadow-2xl"
               />
             </div>
-            <h3 className="text-2xl font-bold mb-2 transition-colors duration-300 group-hover:text-red-600">
+            <h3 className="text-2xl text-gray-900 font-bold mb-2 transition-colors duration-300 group-hover:text-red-600">
               {step.title}
             </h3>
             <p className="font-semibold text-gray-800 transition-all duration-300 group-hover:text-gray-900">
@@ -131,7 +131,7 @@ export default function ProtectionSection() {
       </div>
 
       <motion.h1
-        className="font-bold text-2xl md:text-4xl text-center leading-tight px-auto mt-15"
+        className="font-bold text-2xl md:text-4xl text-center leading-tight px-auto mt-15 text-gray-900"
         initial={{ opacity: 0, y: -20, scale: 0.95 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         viewport={{ once: true }}

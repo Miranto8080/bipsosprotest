@@ -491,11 +491,9 @@ export default function EntreprisesPage() {
         animate={section1InView ? "visible" : "hidden"}
         variants={fadeUpVariants}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="py-5"
+        className="py-5 bg-white"
       >
-        {/* WRAPPER avec marges */}
         <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 overflow-hidden rounded-3xl">
-          {/* Image de fond (PAS full width) */}
           <Image
             src="/images/herro.png"
             alt="Background programme"
@@ -503,10 +501,8 @@ export default function EntreprisesPage() {
             className="object-contain"
           />
 
-          {/* Contenu */}
           <div className="relative z-10 py-20">
             <div className="max-w-6xl mx-auto flex flex-col items-center text-center space-y-8">
-              {/* Badge */}
               <motion.div
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -524,7 +520,6 @@ export default function EntreprisesPage() {
                 LE PROGRAMME
               </motion.div>
 
-              {/* Titre */}
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -537,20 +532,19 @@ export default function EntreprisesPage() {
                 </span>
               </motion.h2>
 
-              {/* Card */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.8 }}
                 className="
-            bg-gray-50
-            border-l-4 border-r-4 border-purple-600
-            rounded-xl
-            p-6 md:p-8
-            shadow-md
-            max-w-4xl
-            text-left
-          "
+                  bg-gray-50
+                  border-l-4 border-r-4 border-purple-600
+                  rounded-xl
+                  p-6 md:p-8
+                  shadow-md
+                  max-w-4xl
+                  text-left
+                "
               >
                 <ul className="space-y-4">
                   <li className="flex items-start gap-4">
@@ -1016,7 +1010,7 @@ export default function EntreprisesPage() {
         </div>
       </section>
 
-      <section className="relative w-full py-20 overflow-hidden">
+      <section className="relative w-full py-20 overflow-hidden bg-white">
         <div className="absolute inset-0">
           <div className="absolute -top-40 -left-40 w-[700px] h-[700px] bg-purple-300/50 rounded-full blur-[140px]" />
           <div className="absolute top-1/3 -right-40 w-[700px] h-[700px] bg-blue-300/50 rounded-full blur-[140px]" />
