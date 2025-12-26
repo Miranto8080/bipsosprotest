@@ -19,6 +19,7 @@ import {
 //   BuildingOfficeIcon,
 // } from "@heroicons/react/24/solid";
 import ProtectionSection from "./ProtectionSection";
+import ImageAccordion from "@/components/ImageAccordion";
 
 export default function HeroSection() {
   useEffect(() => {
@@ -98,26 +99,18 @@ export default function HeroSection() {
           </div>
         </motion.div>
       </section> */}
-      <section className="relative min-h-screen overflow-hidden text-white bg-white">
-        {/* Background Image réduit et avec bg white */}
+      <section className="relative min-h-screen overflow-hidden text-white bg-white py-12">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="absolute inset-0 flex justify-center items-center p-6 md:p-12"
+          className="absolute inset-0 flex justify-center items-center p-6 md:p-12 mb-30"
         >
-          <div className="w-full h-full max-w-[1200px] max-h-[1500px] relative">
-            <Image
-              src="/images/f2.png"
-              alt="Sécurité professionnelle bipSOS"
-              fill
-              priority
-              className="object-contain"
-            />
+          <div className="w-full h-full relative my-400x-auto max-w-10xl">
+            <ImageAccordion />
           </div>
         </motion.div>
 
-        {/* Overlay gradient en bas */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -205,7 +198,7 @@ export default function HeroSection() {
             </h1>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 w-full">
-            <div
+              <div
                 className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/10 
                 hover:bg-white/20 transition text-center 
                 min-h-[520px] flex flex-col justify-between"
