@@ -153,8 +153,8 @@ export default function HeroSection() {
           </div>
         </motion.div>
       </section>
-
-      <div className="relative w-full bg-[#F7F9FB] h-[300px] md:h-[540px] overflow-hidden flex justify-center items-center p-6 md:p-12">
+      <ProtectionSection />
+      <div className="relative w-full bg-[#F7F9FB] h-[200px] md:h-[440px] overflow-hidden flex justify-center items-center p-6 md:p-12">
         <motion.div
           className="relative w-full h-full max-w-[700px] max-h-[500px] md:max-w-[1000px] md:max-h-[700px]"
           initial={{ opacity: 0, y: 40 }}
@@ -170,9 +170,7 @@ export default function HeroSection() {
           />
         </motion.div>
       </div>
-
-      <ProtectionSection />
-      <div className="relative w-full bg-white h-[300px] md:h-[540px] overflow-hidden flex justify-center items-center p-6 md:p-12">
+      <div className="relative w-full bg-white h-[100px] md:h-[340px] overflow-hidden flex justify-center items-center p-5 md:p-11">
         <motion.div
           className="relative w-full h-full max-w-[600px] max-h-[400px] md:max-w-[900px] md:max-h-[600px]"
           initial={{ opacity: 0, y: 40 }}
@@ -191,10 +189,11 @@ export default function HeroSection() {
       <section className="relative min-h-screen flex flex-col justify-center overflow-hidden text-white bg-gradient-to-br from-blue-900 via-blue-950 to-red-800">
         <div className="relative z-10 mx-auto px-6 max-w-6xl my-20">
           <div className="flex flex-col items-center text-center space-y-6">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight before-animate">
+            <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight before-animate">
               Solutions Pro pour{" "}
-              <span className="block text-red-600">entreprises</span> et{" "}
-              <span className="text-red-600">partenaires</span> de diffusion
+              <span className=" block text-red-600">
+                entreprises et partenaires de diffusion
+              </span>
             </h1>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 w-full">
@@ -237,7 +236,7 @@ export default function HeroSection() {
                 </div>
 
                 <Link
-                  href="/partenaires"
+                  href="/entreprises"
                   className="mt-10 inline-block px-8 py-4 rounded-full 
                   text-lg font-bold text-white 
                   bg-gradient-to-r from-red-700 to-red-900 

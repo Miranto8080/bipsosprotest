@@ -59,7 +59,7 @@ export default function PartenairesPage() {
   const items = [
     {
       titleTop: "DISTRIBUTEUR",
-      title: "de vos clients",
+      title: "VOS CLIENTS",
       desc: "Adhérent de mutuelle, assuré de courtier, voyageur d'agence.",
       icon: <Briefcase size={28} strokeWidth={2} />,
       color: "#008069",
@@ -67,7 +67,7 @@ export default function PartenairesPage() {
     },
     {
       titleTop: "Ambassadeur",
-      title: "de vos followers",
+      title: "VOS FOLLOWERS",
       desc: "Membre de vos communautés de l'influenceur ou créateur.",
       icon: <Heart size={28} strokeWidth={2} />,
       color: "#6B00FF",
@@ -75,7 +75,7 @@ export default function PartenairesPage() {
     },
     {
       titleTop: "PRESCRIPTEUR",
-      title: "de vos bénéficiaires",
+      title: "VOS BÉNÉFICIAIRES",
       desc: "Membre ou affilié de l'association, fédération ou collectivité.",
       icon: <Users size={28} strokeWidth={2} />,
       color: "#E3006E",
@@ -313,7 +313,7 @@ export default function PartenairesPage() {
               transition={{ duration: 1, delay: 0.6 }}
               className="relative"
             >
-              <div className="relative h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
+              <div className="relative h-[400px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/images/carre.png"
                   alt="Partenaire bipSOS - Solution de protection"
@@ -438,7 +438,7 @@ export default function PartenairesPage() {
                   transition={{ duration: 0.4, ease: "easeOut" }}
                   className="
                     inline-flex items-center
-                    px-8 py-4
+                    px-8 py-2
                     rounded-[28px]
                     border-2 border-green-500
                     bg-transparent
@@ -449,16 +449,14 @@ export default function PartenairesPage() {
                 >
                   <span
                     className="
-                      text-lg md:text-xl
+                      text-lg md:text-l
                       font-extrabold
                       uppercase
                       leading-tight
                       tracking-wide
                     "
                   >
-                    SOLUTIONS
-                    <br />
-                    DISTRIBUTEURS
+                    SOLUTIONS DISTRIBUTEURS
                   </span>
                 </motion.div>
                 <p className="text-gray-600 text-m mb-6">
@@ -468,7 +466,6 @@ export default function PartenairesPage() {
                   Intégrez bipSOS™ à votre offre et proposez une protection
                   concrète à vos clients. Solution clé en main.
                 </p>
-                <div className="border-t border-gray-200 mb-8"></div>
                 <div className="space-y-4 mb-6">
                   {[
                     "Quota de licences à distribuer",
@@ -507,37 +504,34 @@ export default function PartenairesPage() {
                   transition={{ duration: 0.4, ease: "easeOut" }}
                   className="
                     inline-flex items-center
-                    px-8 py-4
+                    px-8 py-2
                     rounded-[28px]
                     border-2 border-purple-500
                     bg-transparent
                     text-purple-500
                     shadow-sm
-                    max-w-fit mb-5
+                    max-w-fit
                   "
                 >
                   <span
                     className="
-                      text-lg md:text-xl
+                      text-lg md:text-l
                       font-extrabold
                       uppercase
                       leading-tight
                       tracking-wide
                     "
                   >
-                    SOLUTIONS
-                    <br />
-                    AMBASSADEURS
+                    SOLUTIONS AMBASSADEURS
                   </span>
                 </motion.div>
-                <p className="text-gray-600 text-m mb-6">
+                <p className="text-gray-600 text-m mb-2">
                   Influenceurs, podcasteurs, créateurs de contenu
                 </p>
-                <p className="text-gray-700 mb-6 leading-relaxed font-semibold">
+                <p className="text-gray-700 mb-2 leading-relaxed font-semibold">
                   Protégez vos followers et développez vos revenus grâce aux
                   commissions sur chaque abonnement généré.
                 </p>
-                <div className="border-t border-gray-200 mb-8"></div>
                 <div className="space-y-4 mb-6">
                   {[
                     "Commission sur conversions",
@@ -568,7 +562,7 @@ export default function PartenairesPage() {
               className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-shadow duration-300 border-t-4 border-pink-600"
             >
               <div className="p-8 flex flex-col h-full justify-between">
-                <div className="w-15 h-15 flex items-center justify-center rounded-lg bg-gradient-to-br from-pink-600 to-pink-300 text-white mb-2">
+                <div className="w-15 h-15 flex items-center justify-center rounded-lg bg-gradient-to-br from-pink-600 to-pink-300 text-white ">
                   <GlobeAltIcon className="h-10 w-10" />
                 </div>
                 <motion.div
@@ -577,39 +571,36 @@ export default function PartenairesPage() {
                   transition={{ duration: 0.4, ease: "easeOut" }}
                   className="
                     inline-flex items-center
-                    px-8 py-4
+                    px-8 py-2
                     rounded-[28px]
                     border-2 border-pink-500
                     bg-transparent
                     text-pink-500
                     shadow-sm
-                    max-w-fit mb-5
+                    max-w-fit
                   "
                 >
                   <span
                     className="
-                      text-lg md:text-xl
+                      text-lg md:text-l
                       font-extrabold
                       uppercase
                       leading-tight
                       tracking-wide
                     "
                   >
-                    SOLUTIONS
-                    <br />
-                    PRESCRIPTEURS
+                    SOLUTIONS PRESCRIPTEURS 
                   </span>
                 </motion.div>
 
-                <p className="text-gray-600 text-m mb-6">
+                <p className="text-gray-600 text-m">
                   Associations, fédérations, collectivités, syndicats
                 </p>
-                <p className="text-gray-700 mb-6 leading-relaxed font-semibold">
+                <p className="text-gray-700 mb-2 leading-relaxed font-semibold">
                   Offres une solution à valeur ajoutée à vos bénéficiaires.
                   Un partenariat au service de votre mission
                 </p>
-                <div className="border-t border-gray-200 mb-8"></div>
-                <div className="space-y-4 mb-6">
+                <div className="space-y-4 mb-4">
                   {[
                     "Quota de licences négocié",
                     "Tarif préférentiel bénéficiaires",
@@ -728,14 +719,13 @@ export default function PartenairesPage() {
                 <motion.p
                   className="
                     text-2xl md:text-3xl 
-                    font-extrabold 
+                    font-semibold 
                     tracking-wide 
                     uppercase
-                    bg-gradient-to-r from-red-400 via-red-500 to-red-600
+                    bg-gray-900
                     bg-clip-text text-transparent
                     mb-2
                   "
-                  style={{ color: item.color }}
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 + i * 0.15 }}
@@ -743,14 +733,15 @@ export default function PartenairesPage() {
                   {item.titleTop}
                 </motion.p>
 
-                <motion.h3
+                <motion.p
                   className="text-2xl font-bold text-gray-900"
+                  style={{ color: item.color }}
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.45 + i * 0.15 }}
                 >
                   {item.title}
-                </motion.h3>
+                </motion.p>
 
                 <motion.p
                   className="text-gray-600 mt-3 text-sm leading-relaxed"

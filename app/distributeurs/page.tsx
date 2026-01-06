@@ -876,7 +876,7 @@ export default function HeroSection() {
           </div>
         </div>
       </motion.section>
-      <div className="relative w-full bg-white h-[360px] md:h-[600px] overflow-hidden flex justify-center items-center p-6 md:p-12">
+      <div className="relative w-full bg-white h-[260px] md:h-[400px] overflow-hidden flex justify-center items-center p-6 md:p-12">
         <motion.div
           className="relative w-full h-full max-w-[600px] max-h-[400px] md:max-w-[900px] md:max-h-[600px]"
           initial={{ opacity: 0, y: 40 }}

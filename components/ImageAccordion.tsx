@@ -6,11 +6,11 @@ import { useState } from 'react'
 import { FaChevronRight } from 'react-icons/fa' 
 
 const images = [
+  { src: '/images/40.jpg', title: 'Entreprise' },
+  { src: '/images/partenaire.png', title: 'Partenaire' },
+  { src: '/images/podcasts.png', title: 'Influenceur' },
   { src: '/images/distributeur.png', title: 'Distributeur' },
   { src: '/images/prescripteur.png', title: 'Prescripteur' },
-  { src: '/images/entreprise.png', title: 'Entreprise' },
-  { src: '/images/podcasts.png', title: 'Podcasts' },
-  { src: '/images/partenaire.png', title: 'Partenaire' },
 ]
 
 export default function ImageAccordion() {
