@@ -44,15 +44,18 @@ export default function ProtectionSection() {
     },
     {
       title: "le suivi GPS 48h",
-      subtitle: "Rester visible pour ce qui veillent",
+      subtitle: "Rester visible pour ceux qui veillent",
       image: "/images/sos.jpg",
-      description: "Votre position reste visible\npendant 48h.",
+      description:
+        "Votre position reste visible\npendant 48h. Dans le monde entier.",
     },
-    // {
-    //   title: "Historique",
-    //   subtitle: "Chaque alerte laisse une trace qui peut servir de preuve si nécessaire.",
-    //   image: "/images/fonctionnalites-historique-2.jpg",
-    // },
+    {
+      title: "les contacts d'urgence",
+      subtitle: "Faire le bon choix.",
+      image: "/images/4emes.png",
+      description:
+        "Le service d'urgence du pays ou vos proches ou le centre d'assistance agréé bipSOS™.",
+    },
   ];
 
   // const feat = [
@@ -139,8 +142,8 @@ export default function ProtectionSection() {
         et <span className="text-red-600">en toute sécurité</span> grâce à
       </motion.h1>
 
-      <div className="w-full max-w-6xl mx-auto mt-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+      <div className="w-full max-w-7xl mx-auto mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {features.map((item, index) => (
             <motion.div
               key={index}
@@ -151,19 +154,19 @@ export default function ProtectionSection() {
               className="flex flex-col items-center text-center"
             >
               <div
-                className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden shadow-xl
-                hover:shadow-2xl transition-all duration-400 mb-6"
+                className="relative w-full h-64 md:h-72 rounded-2xl overflow-hidden shadow-xl
+          hover:shadow-2xl transition-all duration-400 mb-6"
               >
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
                   className="
-                    object-cover
-                    transition-transform
-                    duration-500
-                    hover:scale-110
-                  "
+              object-cover
+              transition-transform
+              duration-500
+              hover:scale-110
+            "
                 />
               </div>
 
@@ -171,36 +174,13 @@ export default function ProtectionSection() {
                 {item.title}
               </h3>
 
-              <p
-                className="
-                text-lg
-                md:text-xl
-                text-gray-700
-                font-medium
-                mb-4
-                leading-relaxed
-              "
-              >
+              <p className="text-lg md:text-xl text-gray-700 font-medium mb-4 leading-relaxed">
                 {item.subtitle}
               </p>
 
               <div className="text-gray-600">
-                <p
-                  className="
-                    text-base
-                    md:text-lg
-                    leading-relaxed
-                    italic
-                    max-w-sm
-                    mx-auto
-                    whitespace-pre-line
-                  "
-                >
-                  {item.description ||
-                    (index === 0 &&
-                      "Choisis ton fond d'écran\net bipsOS™ s'intègre dans ta vie,\nsans rien imposer.") ||
-                    (index === 1 && "Ton seul sait\nque bipsOS™ te protège.") ||
-                    (index === 2 && "Ta position reste visible\npendant 48h.")}
+                <p className="text-base md:text-lg leading-relaxed italic max-w-sm mx-auto whitespace-pre-line">
+                  {item.description}
                 </p>
               </div>
             </motion.div>

@@ -10,7 +10,7 @@ const images = [
   { src: '/images/partenaire.png', title: 'Partenaire' },
   { src: '/images/podcasts.png', title: 'Influenceur' },
   { src: '/images/distributeur.png', title: 'Distributeur' },
-  { src: '/images/prescripteur.png', title: 'Prescripteur' },
+  { src: '/images/p3.jpg', title: 'Prescripteur' },
 ]
 
 export default function ImageAccordion() {

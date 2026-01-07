@@ -154,7 +154,7 @@ export default function HeroSection() {
         </motion.div>
       </section>
       <ProtectionSection />
-      <div className="relative w-full bg-[#F7F9FB] h-[200px] md:h-[440px] overflow-hidden flex justify-center items-center p-6 md:p-12">
+      {/* <div className="relative w-full bg-[#F7F9FB] h-[200px] md:h-[440px] overflow-hidden flex justify-center items-center p-6 md:p-12">
         <motion.div
           className="relative w-full h-full max-w-[700px] max-h-[500px] md:max-w-[1000px] md:max-h-[700px]"
           initial={{ opacity: 0, y: 40 }}
@@ -169,7 +169,7 @@ export default function HeroSection() {
             className="object-contain"
           />
         </motion.div>
-      </div>
+      </div> */}
       <div className="relative w-full bg-white h-[100px] md:h-[340px] overflow-hidden flex justify-center items-center p-5 md:p-11">
         <motion.div
           className="relative w-full h-full max-w-[600px] max-h-[400px] md:max-w-[900px] md:max-h-[600px]"
