@@ -31,30 +31,30 @@ export default function ProtectionSection() {
   const features = [
     {
       title: "la personnalisation",
-      subtitle: "Votre sécurité, votre style",
+      subtitle: "Votre style, votre protection",
       image: "/images/personnalisation.jpeg",
       description:
-        "Choisissez votre fond d'écran\net bipSOS™ s'intègre dans votre vie,\nsans rien imposer.",
+        "Intégrez bipSOS™ à votre smartphone.\nDiscret, élégant, personnel.",
     },
     {
       title: "la furtivité",
-      subtitle: "Invisible à l'œil nu",
+      subtitle: "Invisible, mais vigilant",
       image: "/images/furtivite.jpeg",
-      description: "Vous seul savez\nque bipSOS™ vous protège.",
+      description: "Vous seul savez que bipSOS™ veille.\nPersonne d'autre.",
     },
     {
       title: "le suivi GPS 48h",
-      subtitle: "Rester visible pour ceux qui veillent",
+      subtitle: "Localisable partout, tout le temps",
       image: "/images/sos.jpg",
       description:
-        "Votre position reste visible\npendant 48h. Dans le monde entier.",
+        "Votre position accessible 48h dans le monde entier.\nSérénité garantie.",
     },
     {
       title: "les contacts d'urgence",
-      subtitle: "Faire le bon choix.",
-      image: "/images/4emes.png",
+      subtitle: "Vous choisissez qui alerter.",
+      image: "/images/46.png",
       description:
-        "Le service d'urgence du pays ou vos proches ou le centre d'assistance agréé bipSOS™.",
+        "Services d'urgence, proches ou centre d'assistance 24/7.\nÀ vous de décider.",
     },
   ];
 
@@ -170,16 +170,16 @@ export default function ProtectionSection() {
                 />
               </div>
 
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight mb-3">
+              <h3 className="text-[22px] md:text-[28px] font-bold text-gray-900 tracking-tight mb-3">
                 {item.title}
               </h3>
 
-              <p className="text-lg md:text-xl text-gray-700 font-medium mb-4 leading-relaxed">
+              <p className="text-[16px] md:text-[18px] text-gray-700 font-medium mb-4 leading-relaxed">
                 {item.subtitle}
               </p>
 
               <div className="text-gray-600">
-                <p className="text-base md:text-lg leading-relaxed italic max-w-sm mx-auto whitespace-pre-line">
+                <p className="text-[14px] md:text-[16px] leading-relaxed italic max-w-sm mx-auto whitespace-pre-line">
                   {item.description}
                 </p>
               </div>
